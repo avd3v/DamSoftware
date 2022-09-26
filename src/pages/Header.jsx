@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="wrp">
       <div className="header">
-        <div>Phoenix TrustedBios(tm) CMOS Setup Utility</div>
+        <div>Dam Software</div>
       </div>
       <ul id="mainMenu">
         <NavLink className="lii" to="/main">

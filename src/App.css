@@ -630,3 +630,70 @@ table {
   color: #000;
   background-color: #FFF;
 }
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+}
+
+.modal__content {
+  padding: 20px;
+  border: 5px solid #0426EA;
+  background-color: #CCCCCC;
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+
+
+}
+
+.modal__items {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.modal.active {
+  transform: scale(1);
+}
+
+.modal__items.active {
+  color: white;
+  background-color: #0426EA;
+}
+
+.not__detected {
+  color: #555;
+}
+
+/* button {
+  display: table-cell;
+  justify-content: space-between;
+  color: #0426EA;
+  border: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'Press Start 2P', cursive;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+
+} */
