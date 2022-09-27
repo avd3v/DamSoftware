@@ -3,15 +3,21 @@ import Modal from "./Modal";
 import Moment from "react-moment";
 
 function Main() {
-  const [modalActive, setModalActive] = useState(false);
+  const [modalActive, setModalActive] = React.useState(false);
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   const onClickIndex = (index) => {
     setSelectedIndex(index);
   };
+  const [user, setUser] = React.useState("Профиль №1");
 
   return (
     <>
-      <Modal active={modalActive} setActive={setModalActive} />
+      <Modal
+        user={user}
+        setUser={setUser}
+        active={modalActive}
+        setActive={setModalActive}
+      />
       <div id="mainPage" className="panel visiblepanel">
         <div className="leftPanel">
           <div className="leftPanelInner">
@@ -48,7 +54,8 @@ function Main() {
               >
                 <td>&#9658; Профиль сотрудника</td>
                 <td>:</td>
-                <td onClick={() => setModalActive(true)}>[Профиль №1]</td>
+
+                <td onClick={() => setModalActive(true)}>[{user}]</td>
               </tr>
 
               <tr
