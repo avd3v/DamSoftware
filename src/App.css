@@ -500,14 +500,18 @@ table {
 }
 
 .sensor--item {
-  border: 1px solid black;
+  border: 3px solid #0426EA;
 
   width: 250px;
-  height: 150px;
+  height: 250px;
 
-  margin: 0 auto;
+  margin: 85px auto;
 
   position: relative;
+}
+
+.block--bottom {
+  border-bottom: 3px solid #0426EA;
 }
 
 #restart {

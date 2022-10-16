@@ -12,7 +12,7 @@ const Generator = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       // 👇️ generate random number between 1 and 10
-      setNum(randomNumberInRange(10, 100));
+      setNum(randomNumberInRange(40, 85));
     }, 1000); // 👈️ runs every 1 second
 
     return () => {
@@ -21,8 +21,8 @@ const Generator = () => {
   }, []);
 
   return (
-    <div>
-      <h2>{num}</h2>
+    <div className="block--bottom">
+      <h2>{num}%</h2>
       <div className="block--sensor" style={{ height: `${num}px` }}></div>
     </div>
   );

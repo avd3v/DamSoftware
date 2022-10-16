@@ -5,51 +5,51 @@ const Sensor = ({ num }) => {
   return (
     <div className="sensors--items">
       <div className="sensor--item">
-        <div>Sensor</div>
+        <div>ADV/MSV</div>
         <div className="block--sensor">{num}</div>
         <div>
           <Generator num={num} />
         </div>
       </div>
       <div className="sensor--item">
-        <div>Sensor</div>
+        <div>Stm Flow</div>
         <div className="block--sensor">{num}</div>
         <div>
           <Generator num={num} />
         </div>
       </div>
       <div className="sensor--item">
-        <div>Sensor</div>
+        <div>Core Flood</div>
         <div>
           <Generator />
         </div>
       </div>
       <div className="sensor--item">
-        <div>Sensor</div>
+        <div>LPI/RHR</div>
         <div>
           <Generator />
         </div>
       </div>
       <div className="sensor--item">
-        <div>Sensor</div>
+        <div>RB Fan Cooler</div>
         <div>
           <Generator />
         </div>
       </div>
       <div className="sensor--item">
-        <div>Sensor</div>
+        <div>RB Spray</div>
         <div>
           <Generator />
         </div>
       </div>
       <div className="sensor--item">
-        <div>Sensor</div>
+        <div>Power</div>
         <div>
           <Generator />
         </div>
       </div>
       <div className="sensor--item">
-        <div>Sensor</div>
+        <div>Voids</div>
         <div>
           <Generator />
         </div>
