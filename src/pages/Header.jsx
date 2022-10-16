@@ -32,6 +32,10 @@ const Header = () => {
           Sensor
         </NavLink>
 
+        <NavLink className="lii" to="/exmp">
+          Example
+        </NavLink>
+
         {/* <Link to="">Exit</Link> */}
       </ul>
     </div>

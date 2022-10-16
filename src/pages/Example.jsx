@@ -1,9 +1,8 @@
 import React from "react";
-import { Doughnut } from "react-chartjs-2";
-import Chart from "chart.js/auto";
+import Generator from "./Generator.jsx";
 
 function Example() {
-  const [numbers, setNumbers] = React.useState([1, 2, 3]);
+  const [numbers, setNumbers] = React.useState([1]);
   const [timerId, setTimerId] = React.useState(null);
 
   const add = () =>
@@ -13,24 +12,25 @@ function Example() {
 
   return (
     <div>
-      <ul>
-        {numbers.map((n) => (
-          <li>{n}</li>
-        ))}
-      </ul>
       <div>
-        <button onClick={add} disabled={timerId}>
-          Добавить число
-        </button>
-        <button onClick={start} disabled={timerId}>
-          Старт
-        </button>
-        <button onClick={stop} disabled={!timerId}>
-          Стоп
-        </button>
+        <ul>{numbers}</ul>
+        <div>
+          <button onClick={add} disabled={timerId}>
+            Добавить число
+          </button>
+          <button onClick={start} disabled={timerId}>
+            Старт
+          </button>
+          <button onClick={stop} disabled={!timerId}>
+            Стоп
+          </button>
+        </div>
+        <div>
+          <div className="chart"></div>
+        </div>
       </div>
       <div>
-        <div className="chart"></div>
+        <Generator />
       </div>
     </div>
   );
