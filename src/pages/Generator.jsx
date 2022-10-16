@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 const Generator = () => {
   const [num, setNum] = useState(0);
+  const [height, setHeight] = useState(50);
 
   function randomNumberInRange(min, max) {
     // 👇️ get number between min (inclusive) and max (inclusive)
@@ -11,8 +12,8 @@ const Generator = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       // 👇️ generate random number between 1 and 10
-      setNum(randomNumberInRange(1, 10));
-    }, 1500); // 👈️ runs every 1 second
+      setNum(randomNumberInRange(10, 100));
+    }, 1000); // 👈️ runs every 1 second
 
     return () => {
       clearInterval(interval);
@@ -22,8 +23,11 @@ const Generator = () => {
   return (
     <div>
       <h2>{num}</h2>
+      <div className="block--sensor" style={{ height: `${num}px` }}></div>
     </div>
   );
 };
 
 export default Generator;
+
+// , rotate: `${num}deg`

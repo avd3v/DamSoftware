@@ -506,6 +506,8 @@ table {
   height: 150px;
 
   margin: 0 auto;
+
+  position: relative;
 }
 
 #restart {
@@ -674,6 +676,18 @@ table {
 
 .not__detected {
   color: #555;
+}
+
+.block--sensor {
+  background-color: greenyellow;
+  position: absolute;
+  bottom: 0px;
+  right: 50px;
+  width: 150px;
+  max-height: 125px;
+  transition: height 1s ease;
+
+
 }
 
 /* button {
