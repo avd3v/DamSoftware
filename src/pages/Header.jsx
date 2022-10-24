@@ -35,6 +35,9 @@ const Header = () => {
         <NavLink className="lii" to="/exmp">
           Example
         </NavLink>
+        <NavLink className="lii" to="/dam">
+          Dam
+        </NavLink>
 
         {/* <Link to="">Exit</Link> */}
       </ul>

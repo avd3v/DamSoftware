@@ -11,6 +11,7 @@ const Sensor = ({ num }) => {
           <Generator num={num} />
         </div>
       </div>
+
       <div className="sensor--item">
         <div>Stm Flow</div>
         <div className="block--sensor">{num}</div>

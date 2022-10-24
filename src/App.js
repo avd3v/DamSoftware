@@ -10,8 +10,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./pages/Header";
 import Security from "./pages/Security";
 import Face from "./pages/Face";
-import Example from "./pages/Example.jsx";
+// import Example from "./pages/Example/Example.jsx";
 import Sensor from "./pages/Sensor";
+import Dam from "./pages/Dam/Dam";
 
 function App() {
   return (
@@ -27,8 +28,9 @@ function App() {
           <Route path="/control" element={<Control />} />
           <Route path="/security" element={<Security />} />
           <Route path="/stat" element={<Stat />} />
-          <Route path="/exmp" element={<Example />} />
+          {/* <Route path="/exmp" element={<Example />} /> */}
           <Route path="/sensor" element={<Sensor />} />
+          <Route path="/dam" element={<Dam />} />
 
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>

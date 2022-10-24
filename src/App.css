@@ -500,7 +500,7 @@ table {
 }
 
 .sensor--item {
-  border: 3px solid #0426EA;
+  border: 5px solid #0426EA;
 
   width: 250px;
   height: 250px;
@@ -511,8 +511,10 @@ table {
 }
 
 .block--bottom {
-  border-bottom: 3px solid #0426EA;
+  border-bottom: 5px solid #0426EA;
 }
+
+
 
 #restart {
   position: fixed;
@@ -686,8 +688,8 @@ table {
   background-color: greenyellow;
   position: absolute;
   bottom: 0px;
-  right: 50px;
-  width: 150px;
+
+  width: 100%;
   max-height: 125px;
   transition: height 1s ease;
 

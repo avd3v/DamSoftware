@@ -1,5 +1,7 @@
 import React from "react";
-import Generator from "./Generator.jsx";
+import style from "./Example.module.css";
+
+import Graphic from "../Graphic.jsx";
 
 function Example() {
   const [numbers, setNumbers] = React.useState([1]);
@@ -25,12 +27,21 @@ function Example() {
             Стоп
           </button>
         </div>
-        <div>
-          <div className="chart"></div>
-        </div>
       </div>
-      <div>
-        <Generator />
+      <div className={style.wrapper}>
+        <div className={style.card}>
+          <div className={style.percent}>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div className={style.number}>
+              <h2>
+                90<span>%</span>
+              </h2>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
