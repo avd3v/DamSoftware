@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/dam/static/css/main.07b84dec.css",
-    "main.js": "/dam/static/js/main.05505a09.js",
+    "main.css": "/dam/static/css/main.6364fd24.css",
+    "main.js": "/dam/static/js/main.2c3ff6df.js",
     "static/media/meramera-PhotoRoom.png": "/dam/static/media/meramera-PhotoRoom.f50032c1d1ab1b36e208.png",
     "index.html": "/dam/index.html",
-    "main.07b84dec.css.map": "/dam/static/css/main.07b84dec.css.map",
-    "main.05505a09.js.map": "/dam/static/js/main.05505a09.js.map"
+    "main.6364fd24.css.map": "/dam/static/css/main.6364fd24.css.map",
+    "main.2c3ff6df.js.map": "/dam/static/js/main.2c3ff6df.js.map"
   },
   "entrypoints": [
-    "static/css/main.07b84dec.css",
-    "static/js/main.05505a09.js"
+    "static/css/main.6364fd24.css",
+    "static/js/main.2c3ff6df.js"
   ]
 }
