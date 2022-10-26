@@ -38,6 +38,9 @@ const Header = () => {
         <NavLink className="lii" to="/dam">
           Dam
         </NavLink>
+        <NavLink className="lii" to="/graphic">
+          Graphic
+        </NavLink>
 
         {/* <Link to="">Exit</Link> */}
       </ul>

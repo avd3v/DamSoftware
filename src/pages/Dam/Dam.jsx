@@ -1,10 +1,11 @@
 import React from "react";
+
 import Generator from "../Generator";
 import style from "./Dam.module.css";
 import Damba from "./meramera-PhotoRoom.png";
 
 const Dam = () => {
-  const [num, setNum] = React.useState(460);
+  const [num, setNum] = React.useState(430);
 
   function randomNumberInRange(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -12,8 +13,8 @@ const Dam = () => {
 
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setNum(randomNumberInRange(430, 470));
-    }, 1000);
+      setNum(randomNumberInRange(395, 430));
+    }, 1500);
 
     return () => {
       clearInterval(interval);

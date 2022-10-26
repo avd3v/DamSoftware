@@ -14,6 +14,8 @@ import Face from "./pages/Face";
 import Sensor from "./pages/Sensor";
 import Dam from "./pages/Dam/Dam";
 
+import Graphic from "./pages/Graphic.jsx";
+
 function App() {
   return (
     <div className="bios">
@@ -31,6 +33,7 @@ function App() {
           {/* <Route path="/exmp" element={<Example />} /> */}
           <Route path="/sensor" element={<Sensor />} />
           <Route path="/dam" element={<Dam />} />
+          <Route path="/graphic" element={<Graphic />} />
 
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
