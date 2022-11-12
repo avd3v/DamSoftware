@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
 import Moment from "react-moment";
-import Error from "./Error";
 
 function Main() {
   const [modalActive, setModalActive] = React.useState(false);
@@ -19,7 +18,7 @@ function Main() {
         active={modalActive}
         setActive={setModalActive}
       />
-      <Error />
+
       <div id="mainPage" className="panel visiblepanel">
         <div className="leftPanel">
           <div className="leftPanelInner">

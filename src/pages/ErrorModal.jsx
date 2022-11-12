@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const ErrorModal = ({ setModalActive }) => {
+const ErrorModal = (props) => {
   return (
     <div>
       <div
@@ -12,10 +12,18 @@ const ErrorModal = ({ setModalActive }) => {
           нажать ОК
         </div>
         <div className="wrapper--btn">
-          <button className="btn--error" onClick={() => setModalActive(false)}>
+          <button
+            className="btn--error"
+            onClick={() => props.repairErrorCallBack()}
+          >
             Устранить
           </button>
-          <button className="btn--error">Игнорировать</button>
+          <button
+            className="btn--error"
+            onClick={() => props.ignoreErrorCallBack()}
+          >
+            Игнорировать
+          </button>
         </div>
       </div>
     </div>

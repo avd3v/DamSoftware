@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import style from "./Example/Example.module.css";
 
-const Generator = () => {
+const Generator = (props) => {
   const value = Math.random() > Math.random();
 
   let part = null;
@@ -12,19 +12,25 @@ const Generator = () => {
   }
 
   const [num, setNum] = useState(50);
+
   function randomNumberInRange(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
   useEffect(() => {
+    console.log(props);
     const interval = setInterval(() => {
-      setNum(randomNumberInRange(40, 85));
+      if (props.isError) {
+        setNum(randomNumberInRange(90, 100));
+      } else {
+        setNum(randomNumberInRange(50, 85));
+      }
     }, 1000);
 
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [props.isError]);
 
   return (
     <div>
@@ -43,5 +49,3 @@ const Generator = () => {
 };
 
 export default Generator;
-
-// , rotate: `${num}deg`
