@@ -516,6 +516,8 @@ table {
 
 
 
+
+
 #restart {
   position: fixed;
   top: 0;
@@ -661,8 +663,16 @@ table {
   width: 400px;
   height: 200px;
   margin: 0 auto;
+}
 
-
+.modal__content__error {
+  padding: 20px;
+  border: 5px solid #0426EA;
+  background-color: #CCCCCC;
+  width: 900px;
+  height: 500px;
+  position: absolute;
+  left: 25%;
 }
 
 .modal__items {
@@ -694,6 +704,47 @@ table {
   transition: height 1s ease;
 
 
+}
+
+.btn--error {
+  display: table-cell;
+  justify-content: space-between;
+  color: #0426EA;
+  border: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: 'Press Start 2P', cursive;
+
+  margin: 0;
+  padding: 6px;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  border: 4px solid #0426EA;
+
+}
+
+.btn--error:hover {
+  background-color: #0426EA;
+  color: white;
+}
+
+
+.wrapper--btn {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text__error {
+  margin: 75px;
 }
 
 /* button {
