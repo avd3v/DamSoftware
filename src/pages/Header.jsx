@@ -31,15 +31,8 @@ const Header = () => {
         <NavLink className="lii" to="/sensor">
           Sensor
         </NavLink>
-
-        <NavLink className="lii" to="/exmp">
-          Example
-        </NavLink>
         <NavLink className="lii" to="/dam">
           Dam
-        </NavLink>
-        <NavLink className="lii" to="/graphic">
-          Graphic
         </NavLink>
 
         {/* <Link to="">Exit</Link> */}

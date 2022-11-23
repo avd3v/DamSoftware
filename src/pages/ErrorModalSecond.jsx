@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const ErrorModal = (props) => {
+const ErrorModalSecond = (props) => {
   return (
     <div>
       <div
@@ -8,15 +8,15 @@ const ErrorModal = (props) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="text__error">
-          Критическая ошибка. Уровень воды в дамбе сильно превышен.Открыть шлюзы
-          для сброса воды?
+          Критическая ошибка.Нагрузка на турбину и пьезометрический напор достиг
+          предельных показателей. Сделать аварийный перезапуск турбины?
         </div>
         <div className="wrapper--btn">
           <button
             className="btn--error"
             onClick={() => props.repairErrorCallBack()}
           >
-            Открыть шлюзы
+            Перезапуск
           </button>
           <button
             className="btn--error"
@@ -29,4 +29,4 @@ const ErrorModal = (props) => {
     </div>
   );
 };
-export default ErrorModal;
+export default ErrorModalSecond;

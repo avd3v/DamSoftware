@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Generator from "./Generator";
-import ErrorModal from "./ErrorModal";
+import ErrorModalSecond from "./ErrorModalSecond.jsx";
 // import Error from "./Error";
 
 const Sensor = ({ num }) => {
@@ -25,13 +25,19 @@ const Sensor = ({ num }) => {
     setErrorIgnoring(false);
   }
 
+  function ErrorHello() {
+    setIsError(true);
+  }
+
   useEffect(() => {
     const interval = setInterval(() => {
       if (isError === false) {
-        var rand_num = randomNumber(1, 4);
+        var rand_num = randomNumber(1, 8);
 
         if (rand_num === 1) {
           setIsError(true);
+          clearInterval(interval);
+          console.log(rand_num);
         }
       }
     }, 1000);
@@ -41,7 +47,7 @@ const Sensor = ({ num }) => {
   return (
     <>
       {isError && !isErrorIgnoring && (
-        <ErrorModal
+        <ErrorModalSecond
           repairErrorCallBack={repairError}
           ignoreErrorCallBack={ignoreError}
         />
@@ -49,9 +55,8 @@ const Sensor = ({ num }) => {
 
       <div className="sensors--items">
         <div className="sensor--item">
-          <div>ADV/MSV</div>
+          <div>Нагрузка турбины дамбы</div>
           <div className="block--sensor">{num}</div>
-          {/* <Error /> */}
 
           <div>
             <Generator isError={isError} />
@@ -59,54 +64,60 @@ const Sensor = ({ num }) => {
         </div>
 
         <div className="sensor--item">
-          <div>Stm Flow</div>
+          <div>
+            {" "}
+            Пьезомет-
+            <br />
+            рический напор
+          </div>
           <div className="block--sensor">{num}</div>
           <div>
             <Generator isError={isError} />
           </div>
         </div>
         <div className="sensor--item">
-          <div>Core Flood</div>
+          <div>Давление на бьеф дамбы</div>
           <div>
-            <Generator isError={isError} />
+            <Generator />
           </div>
         </div>
         <div className="sensor--item">
-          <div>LPI/RHR</div>
+          <div>Сброс излишек воды</div>
           <div>
-            <Generator isError={isError} />
+            <Generator />
           </div>
         </div>
         <div className="sensor--item">
-          <div>RB Fan Cooler</div>
+          <div>Изменение уровня воды</div>
           <div>
-            <Generator isError={isError} />
+            <Generator />
           </div>
         </div>
         <div className="sensor--item">
-          <div>RB Spray</div>
+          <div>Поровое давление грунта</div>
           <div>
-            <Generator isError={isError} />
+            <Generator />
           </div>
         </div>
         <div className="sensor--item">
-          <div>Power</div>
+          <div>Фильтр расход воды</div>
           <div>
-            <Generator isError={isError} />
+            <Generator />
           </div>
         </div>
         <div className="sensor--item">
-          <div>Voids</div>
+          <div>Объём воды в дамбе</div>
           <div>
-            <Generator isError={isError} />
+            <Generator />
           </div>
         </div>
-
-        <div>
-          {isError && (
-            <button onClick={() => returnModal()}> Обнаружена ошибка </button>
-          )}
-        </div>
+      </div>
+      <div>
+        {isError && (
+          <button className="ignoring--btn" onClick={() => returnModal()}>
+            Обнаружена ошибка
+          </button>
+        )}
       </div>
     </>
   );
