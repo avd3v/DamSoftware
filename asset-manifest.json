@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/DamSoftware/static/css/main.a5342759.css",
-    "main.js": "/DamSoftware/static/js/main.c5e3985e.js",
-    "static/media/meramera-PhotoRoom.png": "/DamSoftware/static/media/meramera-PhotoRoom.f50032c1d1ab1b36e208.png",
-    "index.html": "/DamSoftware/index.html",
-    "main.a5342759.css.map": "/DamSoftware/static/css/main.a5342759.css.map",
-    "main.c5e3985e.js.map": "/DamSoftware/static/js/main.c5e3985e.js.map"
+    "main.css": "/dam/static/css/main.e7b1dd84.css",
+    "main.js": "/dam/static/js/main.86913f4f.js",
+    "static/media/meramera-PhotoRoom.png": "/dam/static/media/meramera-PhotoRoom.f50032c1d1ab1b36e208.png",
+    "index.html": "/dam/index.html",
+    "main.e7b1dd84.css.map": "/dam/static/css/main.e7b1dd84.css.map",
+    "main.86913f4f.js.map": "/dam/static/js/main.86913f4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5342759.css",
-    "static/js/main.c5e3985e.js"
+    "static/css/main.e7b1dd84.css",
+    "static/js/main.86913f4f.js"
   ]
 }
