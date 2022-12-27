@@ -64,3 +64,7 @@ svg circle:nth-child(2) {
 .card:nth-child(1) svg circle:nth-child(2) {
     stroke-dashoffset: calc(440px - (440px * 90) / 100);
 }
+
+.titleh2 {
+    margin-top: 25px;
+}

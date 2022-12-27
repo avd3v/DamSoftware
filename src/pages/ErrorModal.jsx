@@ -8,8 +8,7 @@ const ErrorModal = (props) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="text__error">
-          Критическая ошибка. Уровень воды в дамбе сильно превышен.Открыть шлюзы
-          для сброса воды?
+          Уровень воды в дамбе сильно превышен.Открыть шлюзы для сброса воды?
         </div>
         <div className="wrapper--btn">
           <button

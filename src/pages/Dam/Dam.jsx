@@ -3,7 +3,7 @@ import ErrorModal from "../ErrorModal";
 
 import Generator from "../Generator";
 import style from "./Dam.module.css";
-import Damba from "./meramera-PhotoRoom.png";
+import Damba from "./DambaMera.png";
 
 const Dam = () => {
   const [num, setNum] = React.useState(375);
@@ -77,37 +77,11 @@ const Dam = () => {
             ></div>
           </div>
         </div>
-        <div className={style.sensor}>
-          <div className={style.item}>
-            <div>Скорость течения</div>
-            <div>
-              <Generator />
-            </div>
-          </div>
-          <div className={style.item}>
-            <div>Уровень воды</div>
-            <div>
-              <Generator />
-            </div>
-          </div>
-          <div className={style.item}>
-            <div>Температура турбины (предел)</div>
-            <div>
-              <Generator />
-            </div>
-          </div>
-          <div className={style.item}>
-            <div>Мощность напора шлюза</div>
-            <div>
-              <Generator />
-            </div>
-          </div>
-        </div>
       </div>
       <div>
         {isError && (
           <button className="ignoring--btn" onClick={() => returnModal()}>
-            Обнаружена ошибка
+            Критический уровень воды
           </button>
         )}
       </div>

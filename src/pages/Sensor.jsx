@@ -55,14 +55,16 @@ const Sensor = ({ num }) => {
 
       <div className="sensors--items">
         <div className="sensor--item">
-          <div>Нагрузка турбины дамбы</div>
-          <div className="block--sensor">{num}</div>
-
-          <div>
-            <Generator isError={isError} />
-          </div>
+          <div>Избыточное давление</div>
+          <Generator isError={isError} /> кПА
         </div>
 
+        <div className="sensor--item">
+          <div>Сброс излишек воды</div>
+          <div>
+            <Generator /> Куб/ч
+          </div>
+        </div>
         <div className="sensor--item">
           <div>
             {" "}
@@ -71,44 +73,16 @@ const Sensor = ({ num }) => {
             рический напор
           </div>
           <div className="block--sensor">{num}</div>
+
           <div>
-            <Generator isError={isError} />
+            <Generator /> Н
           </div>
         </div>
-        <div className="sensor--item">
-          <div>Давление на бьеф дамбы</div>
-          <div>
-            <Generator />
-          </div>
-        </div>
-        <div className="sensor--item">
-          <div>Сброс излишек воды</div>
-          <div>
-            <Generator />
-          </div>
-        </div>
-        <div className="sensor--item">
-          <div>Изменение уровня воды</div>
-          <div>
-            <Generator />
-          </div>
-        </div>
+
         <div className="sensor--item">
           <div>Поровое давление грунта</div>
           <div>
-            <Generator />
-          </div>
-        </div>
-        <div className="sensor--item">
-          <div>Фильтр расход воды</div>
-          <div>
-            <Generator />
-          </div>
-        </div>
-        <div className="sensor--item">
-          <div>Объём воды в дамбе</div>
-          <div>
-            <Generator />
+            <Generator /> МПа
           </div>
         </div>
       </div>

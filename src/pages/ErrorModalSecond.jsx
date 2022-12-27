@@ -8,15 +8,15 @@ const ErrorModalSecond = (props) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="text__error">
-          Критическая ошибка.Нагрузка на турбину и пьезометрический напор достиг
-          предельных показателей. Сделать аварийный перезапуск турбины?
+          Критическая ошибка. Избыточное давление достигло предельных
+          показателей.
         </div>
         <div className="wrapper--btn">
           <button
             className="btn--error"
             onClick={() => props.repairErrorCallBack()}
           >
-            Перезапуск
+            Устранить
           </button>
           <button
             className="btn--error"

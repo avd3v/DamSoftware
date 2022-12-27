@@ -504,7 +504,7 @@ table {
 .sensor--item {
   border: 5px solid #0426EA;
 
-  width: 250px;
+  width: 350px;
   height: 250px;
 
   margin: 85px auto;
@@ -788,6 +788,8 @@ table {
   margin: 75px;
   text-align: center;
 }
+
+
 
 /* button {
   display: table-cell;

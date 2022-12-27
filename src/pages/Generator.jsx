@@ -14,7 +14,7 @@ const Generator = (props) => {
     console.log(props);
     const interval = setInterval(() => {
       if (props.isError) {
-        setNum(randomNumberInRange(90, 100));
+        setNum(randomNumberInRange(110, 130));
       } else {
         setNum(randomNumberInRange(50, 85));
       }
@@ -31,10 +31,7 @@ const Generator = (props) => {
         <div className={style.card}></div>
       </div>
 
-      <div className="block--bottom">
-        <h2>{num}%</h2>
-        <div className="block--sensor" style={{ height: `${num}px` }}></div>
-      </div>
+      <h2 className={style.titleh2}>{num}</h2>
     </div>
   );
 };
